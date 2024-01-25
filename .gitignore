@@ -450,3 +450,11 @@ NimCSharp/obj/NimCSharp.csproj.nuget.dgspec.json
 NimCSharp/obj/NimCSharp.csproj.nuget.g.props
 NimCSharp/obj/project.assets.json
 *.cache
+NimCSharp/obj/Debug/net7.0/NimCSharp.AssemblyInfo.cs
+NimCSharp/obj/Debug/net7.0/NimCSharp.AssemblyInfoInputs.cache
+NimCSharp/obj/Debug/net7.0/NimCSharp.assets.cache
+NimCSharp/obj/Debug/net7.0/NimCSharp.GeneratedMSBuildEditorConfig.editorconfig
+NimCSharp/obj/Debug/net7.0/NimCSharp.GeneratedMSBuildEditorConfig.editorconfig
+NimCSharp/obj/Debug/net7.0/NimCSharp.assets.cache
+NimCSharp/obj/Debug/net7.0/NimCSharp.AssemblyInfoInputs.cache
+NimCSharp/obj/Debug/net7.0/NimCSharp.AssemblyInfo.cs
