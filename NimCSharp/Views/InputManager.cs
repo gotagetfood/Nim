@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NimCSharp
+
+namespace NimCSharp.Views
 {
     internal class InputManager
     {
         //for change doc, design change, compare method is bool not void
-        public void generateMenu(List<String> options)
+        public void generateMenu(List<string> options)
         {
             int i = 1;
             foreach (string s in options)
