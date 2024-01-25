@@ -442,3 +442,11 @@ NimCSharp/obj/Debug/net7.0/NimCSharp.AssemblyInfo.cs
 *.vsidx
 NimCSharp/.vs/NimCSharp/FileContentIndex/6e975a0a-09db-4300-a78b-4422a4eb920c.vsidx
 NimCSharp/.vs/NimCSharp/FileContentIndex/e650809b-52fd-418b-bbbe-0b6673d2a386.vsidx
+*.vsidx
+NimCSharp/.vs/NimCSharp/v17/.suo
+*.cache
+*.editorconfig
+NimCSharp/obj/NimCSharp.csproj.nuget.dgspec.json
+NimCSharp/obj/NimCSharp.csproj.nuget.g.props
+NimCSharp/obj/project.assets.json
+*.cache
