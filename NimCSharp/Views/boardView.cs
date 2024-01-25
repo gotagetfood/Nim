@@ -16,7 +16,7 @@ namespace NimCSharp.Views
             int row = 1;
             foreach (List<stickModel> stick in board.getStickList())
             {
-                Console.WriteLine("\n" + row);
+                Console.WriteLine("\n" + row + ":");
                 foreach (stickModel s in stick)
                 {
                     if (s.isActive())
