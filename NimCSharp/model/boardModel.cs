@@ -17,5 +17,10 @@ namespace NimCSharp.model
         {
             this.stickList = stickList;
         }
+
+        public List<List<stickModel>> getStickList()
+        {
+            return stickList;
+        }
     }
 }

@@ -25,5 +25,11 @@ namespace NimCSharp.model
             this.y = y;
             this.active = active;
         }
+
+
+        public bool isActive()
+        {
+            return active;
+        }
     }
 }
