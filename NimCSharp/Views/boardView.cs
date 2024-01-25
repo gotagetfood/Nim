@@ -16,20 +16,29 @@ namespace NimCSharp.Views
             int row = 1;
             foreach (List<stickModel> stick in board.getStickList())
             {
-                Console.WriteLine("\n" + row + ":");
-                foreach (stickModel s in stick)
+                int rowCenteringSpaces = 0;
+                rowCenteringSpaces = (board.getStickList().Count - row);
+                string rowString = "";
+
+                rowString += row + ": ";
+                for(int i = 0; i < rowCenteringSpaces; i++)
+                {
+                    rowString += " ";
+                }
+              foreach (stickModel s in stick)
                 {
                     if (s.isActive())
                     {
-                        Console.Write("*\n|");
+                        rowString += " |";
                     }
                     else
                     {
-                        Console.Write(" ");
+                        rowString += " ";
                     }
                 }
+              
 
-                Console.WriteLine();
+                Console.WriteLine(rowString);
                 row++;
             }
 
