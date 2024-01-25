@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uBJS00+FkxSlzHy2k+p/lUoVaKDyPaPUW6B3f9IPSOxjrw2kra9P5E4mIuVsN3Qr/SwP6joxbtCWuY9oPB3+UA==",
+  "dgSpecHash": "UQH2PN9zZOwX5tKfbApf5axFiRq/qtbd0c9pNAK3Ke4/EwlSx1lyjGN8hfBKsiG0mMWADis/W5St2N+Ncd0Vvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ccolby\\Desktop\\Nim\\NimCSharp\\NimCSharp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ccolby\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\ccolby\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\ccolby\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\ccolby\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
