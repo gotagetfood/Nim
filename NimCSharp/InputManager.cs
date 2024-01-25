@@ -9,40 +9,38 @@ namespace NimCSharp
     internal class InputManager
     {
         //for change doc, design change, compare method is bool not void
-        private bool compare(string a, string b)
+        public void generateMenu(List<String> options)
         {
-            return true;
-        }
-        //design change, returns string not void
-        private string toLower(string Str)
-        {
-            return "";
-        }
-
-        public void gameSetup()
-        {
-}
-        public void printMenu()
-        {
-
-        }
-
-        public int selectMenu()
-        {
-            return 0;
+            int i = 1;
+            foreach (string s in options)
+            {
+                Console.WriteLine(i + "] " + s);
+                i++;
+            }
         }
 
         //design change, returns string not void
-        public string nameEnter(string name)
+        public string stringEnter()
         {
+            string input = Console.ReadLine();
+            while (input == null)
+            {
+                Console.WriteLine("Please enter a valid string");
+                input = Console.ReadLine();
+            }
             return "";
         }
-        
+
         //design change, added methods for input validation
 
         public int inputNumber()
         {
-            return 0;
+            int number;
+            while (!int.TryParse(Console.ReadLine(), out number))
+            {
+                Console.WriteLine("Please enter a valid number");
+            }
+            return number;
         }
 
 
