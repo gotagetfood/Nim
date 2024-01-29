@@ -20,6 +20,7 @@ namespace NimCSharp.model
 
         
 
+
         public List<List<stickModel>> getStickList()
         {
             return stickList;

@@ -9,13 +9,13 @@ namespace NimCSharp.Controllers
 {
     internal class GameManager
     {
-        Board board;   
+        Board board;
         InputManager inputManager;
-      
+
         public GameManager()
         {
             inputManager = new InputManager();
-          
+
         }
         private void Game()
         {
@@ -53,7 +53,7 @@ namespace NimCSharp.Controllers
         {
             bool menu = true;
             string[] options = new string[] { "Exit", "Play Again" };
-          inputManager.generateMenu("The game is now over, would you like to exit, or play again?", options);
+            inputManager.generateMenu("The game is now over, would you like to exit, or play again?", options);
             while (menu)
             {
                 switch (inputManager.inputNumber())
@@ -73,7 +73,7 @@ namespace NimCSharp.Controllers
             }
         }
 
-      
+
 
     }
 }

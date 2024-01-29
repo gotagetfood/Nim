@@ -14,15 +14,15 @@ namespace NimCSharp.Controllers
     internal class Board
     {
         int turnCount;
-       // List<stickModel> Sticks;
-       boardModel board;
+        // List<stickModel> Sticks;
+        boardModel board;
         bool currentTurn;
         InputManager inpManager;
         boardView view;
         playerModel player1;
         playerModel player2;
 
-      
+
 
 
         public Board(InputManager inputManager)
@@ -33,13 +33,13 @@ namespace NimCSharp.Controllers
             board = new boardModel();
             view = new boardView(inpManager);
             string oneName = inpManager.nameMenu(1);
-            player1 = new playerModel(1,oneName , false);
+            player1 = new playerModel(1, oneName, false);
             string twoName = inpManager.nameMenu(2);
             player2 = new playerModel(2, twoName, false);
             board = boardSetup(view.BoardSizeMenu());
             view.setBoard(board);
         }
-       void takeSticks(int row, int num)
+        void takeSticks(int row, int num)
         {
             for (int i = 0; i < num; i++)
             {
@@ -60,7 +60,7 @@ namespace NimCSharp.Controllers
                 {
                     Vector2 selection = view.turnMenu(player1);
                     takeSticks((int)selection.X, (int)selection.Y);
-                    player1.takenSticks+=(int)selection.Y; 
+                    player1.takenSticks += (int)selection.Y;
                 }
                 else
                 {
@@ -72,8 +72,8 @@ namespace NimCSharp.Controllers
                 turnCount++;
             }
             gameEnd();
-           
-           
+
+
         }
 
         public void gameStart()
@@ -100,19 +100,19 @@ namespace NimCSharp.Controllers
         {
 
             int id = 0;
-                List<List<stickModel>> stickList = new List<List<stickModel>>();
+            List<List<stickModel>> stickList = new List<List<stickModel>>();
             for (int i = 0; i < size; i++)
             {
-                    List<stickModel> sticks = new List<stickModel>();
-                    for (int k = 0; k < i + 1; k++)
-                    {
-                        sticks.Add(new stickModel(id, i, k, true));
-                        id++;
-                    }
-                    stickList.Add(sticks);
-                
+                List<stickModel> sticks = new List<stickModel>();
+                for (int k = 0; k < i + 1; k++)
+                {
+                    sticks.Add(new stickModel(id, i, k, true));
+                    id++;
+                }
+                stickList.Add(sticks);
+
             }
-                return new boardModel(id, stickList);
+            return new boardModel(id, stickList);
 
         }
 

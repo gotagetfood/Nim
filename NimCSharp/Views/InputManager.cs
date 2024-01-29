@@ -53,6 +53,7 @@ namespace NimCSharp.Views
             return number;
         }
 
+
         public string nameMenu(int num)
         {
             divider();

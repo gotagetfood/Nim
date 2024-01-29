@@ -12,7 +12,7 @@ namespace NimCSharp.Views
     {
         private InputManager inpManager;
         boardModel board;
-        
+
         int boardSize;
 
         public boardView(boardModel board, InputManager inpManager)
@@ -30,7 +30,7 @@ namespace NimCSharp.Views
         public void setBoard(boardModel board)
         {
             this.board = board;
-        }   
+        }
         public void printBoard()
         {
             inpManager.divider();
@@ -43,11 +43,11 @@ namespace NimCSharp.Views
                 string rowString = "";
 
                 rowString += row + ": ";
-                for(int i = 0; i < rowCenteringSpaces; i++)
+                for (int i = 0; i < rowCenteringSpaces; i++)
                 {
                     rowString += " ";
                 }
-              foreach (stickModel s in stick)
+                foreach (stickModel s in stick)
                 {
                     if (s.isActive())
                     {
@@ -61,7 +61,7 @@ namespace NimCSharp.Views
                 Console.WriteLine(rowString);
                 row++;
             }
-            
+
         }
 
         public void printPlayerScore(playerModel player)
@@ -71,13 +71,13 @@ namespace NimCSharp.Views
 
         public Vector2 turnMenu(playerModel player)
         {
-           
+
             //printTurn(player);
-           // inpManager.divider();
+            // inpManager.divider();
             Console.WriteLine(player.name + ", please select a row to take sticks from.");
             inpManager.divider();
-            int selection = inpManager.inputNumber(); 
-            while(selection < 1 || selection > boardSize)
+            int selection = inpManager.inputNumber();
+            while (selection < 1 || selection > boardSize)
             {
                 Console.WriteLine("Please enter a valid row");
                 selection = inpManager.inputNumber();
@@ -87,13 +87,13 @@ namespace NimCSharp.Views
             Console.WriteLine("Please enter the number of sticks to take");
             inpManager.divider();
             int num = inpManager.inputNumber();
-            while(num < 1 || num > selectedRow.Count)
+            while (num < 1 || num > selectedRow.Count)
             {
                 Console.WriteLine("Please enter a valid number of sticks");
                 num = inpManager.inputNumber();
             }
-           return new Vector2(selection-1, num);
-            
+            return new Vector2(selection - 1, num);
+
         }
 
         public void printTurn(playerModel player)
@@ -122,7 +122,7 @@ namespace NimCSharp.Views
                 boardSize = inpManager.inputNumber();
             }
             return boardSize;
-          
+
         }
 
 
