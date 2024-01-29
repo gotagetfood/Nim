@@ -31,5 +31,10 @@ namespace NimCSharp.model
         {
             return active;
         }
+
+        public void setActive(bool active)
+        {
+            this.active = active;
+        }
     }
 }

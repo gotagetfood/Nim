@@ -10,27 +10,36 @@ namespace NimCSharp.Views
     internal class InputManager
     {
         //for change doc, design change, compare method is bool not void
-        public void generateMenu(List<string> options)
+        public void generateMenu(string intro, string[] options)
         {
             int i = 1;
+            Console.WriteLine(intro);
+            divider();
             foreach (string s in options)
             {
                 Console.WriteLine(i + "] " + s);
                 i++;
             }
+            divider();
         }
 
         //design change, returns string not void
-        public string stringEnter()
+        public string stringEnter(string parameter)
         {
             string input = Console.ReadLine();
             while (input == null)
             {
-                Console.WriteLine("Please enter a valid string");
+                Console.WriteLine("Please enter a valid " + parameter);
                 input = Console.ReadLine();
             }
-            return "";
+            return input;
         }
+
+        public void divider()
+        {
+            Console.WriteLine("-----------------------");
+        }
+
 
         //design change, added methods for input validation
 
@@ -44,7 +53,13 @@ namespace NimCSharp.Views
             return number;
         }
 
-
+        public string nameMenu(int num)
+        {
+            divider();
+            Console.WriteLine("Player " + num + " Please enter your name");
+            divider();
+           return stringEnter("name");
+        }
 
 
 

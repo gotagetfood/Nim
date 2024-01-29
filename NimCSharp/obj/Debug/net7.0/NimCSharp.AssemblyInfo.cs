@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NimCSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80ac087b20b3ac34997213c1a469bbab2372bf77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fa792cced60e2a33696f28d4013226c7b6b7b51")]
 [assembly: System.Reflection.AssemblyProductAttribute("NimCSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NimCSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

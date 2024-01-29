@@ -12,13 +12,17 @@ namespace NimCSharp.model
         public int id;
         public string name;
         public bool haswon;
+        public int takenSticks;
 
-        public playerModel() { }
+      
         public playerModel(int id, string name, bool haswon)
         {
             this.id = id;
-            this.name = name;
+             this.name = name;
             this.haswon = haswon;
+            takenSticks = 0;
         }
+
+        
     }
 }

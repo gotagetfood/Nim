@@ -18,9 +18,27 @@ namespace NimCSharp.model
             this.stickList = stickList;
         }
 
+        
+
         public List<List<stickModel>> getStickList()
         {
             return stickList;
+        }
+
+        public int getActiveSticks()
+        {
+            int activeSticks = 0;
+            foreach (List<stickModel> list in stickList)
+            {
+                foreach (stickModel stick in list)
+                {
+                    if (stick.isActive())
+                    {
+                        activeSticks++;
+                    }
+                }
+            }
+            return activeSticks;
         }
     }
 }
