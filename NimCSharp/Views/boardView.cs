@@ -87,7 +87,7 @@ namespace NimCSharp.Views
             Console.WriteLine("Please enter the number of sticks to take");
             inpManager.divider();
             int num = inpManager.inputNumber();
-            while (num < 1 || num > selectedRow.Count)
+            while (num < 1 || num > board.getActiveSticksInRow(selection-1))
             {
                 Console.WriteLine("Please enter a valid number of sticks");
                 num = inpManager.inputNumber();
